@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <!-- Title of the website-->
+<title>Good News Publishing System.</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+        <style>
+          .icon {
+            height: 50px;
+            width: 50px;
+            background: rgb(255, 255, 255);
+            margin-top: 10px;
+          }
+      
+          a:hover
+          {
+            color:rgb(185, 185, 185);
+            background-color: transparent;
+            text-decoration: none;
+          }
+
+          /* vertical line */
+          .vl {
+            border-left: 1px solid rgb(219, 216, 216);
+            height: 25px;
+            position: absolute;
+            top: 0;
+              }
+        
+          /* font style for the Headlines*/
+          h1.a{
+            word-wrap: break-word;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-family:Arial, Helvetica, sans-serif;
+            text-align:center;
+            /* width: 80%;                   */
+          }
+
+          
+
+
+          .button {
+            background-color: #4172dc; 
+            border: none;
+            color: white;
+            padding: 13px 28px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+          }
+
+
+
+
+
+
+
+          .dropbtn {
+  background-color: #ffffff;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #ddd;}
+
+
+
+
+
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #ddd;
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  /* background-position: 14px 12px; */
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+
+
+
+
+
+.text-block {
+  position: absolute;
+  bottom: 2%;
+  right: 50%;
+  
+  color: rgb(255, 255, 255);
+  /* text-align: center; */
+}
+
+.imgcontainer {
+  position: relative;
+  /* max-width: 800px; */
+  margin: 0 auto;
+}
+.imgcontainer .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+
+
+.crop {
+        width: 500px;
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .crop img {
+        width: 400px;
+        height: 300px;
+        margin: -75px 0 0 -100px;
+    }
+
+
+
+
+</style>
+
+
+
+
+
+
+</head>
+
+<body >
+        <!-- Header -->
+        <header class="bg-light border-bottom" >
+       
+          <!-- Navbar -->
+          <nav class="navbar " style = "background-color:white;" >
+            <div class="container" >
+              <img src="../images/logo.png" width="120" height="90" style="margin-left: -15vw;">
+              <!-- Web Name or Logo -->
+              <div style="font-size:20px; font-family:Arial, Helvetica, sans-serif; color:grey; margin-left: 0vw;">
+              Good News Publishing System. 
+              </div>
+       
+              
+       
+
+              
+                
+              <!-- Menu bar -->
+                
+                  
+                  <div class="dropdown" style="margin-left: 40vw;">
+                    <button class="dropbtn" >Menu 
+                      <!-- <i class="fa fa-caret-down"></i> -->
+                      <i class="material-icons" style="margin-left: 1vw;">menu</i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="main.html">Home</a>
+                      <a href="regional.html">Regional News</a>
+                      <a href="science.html">Science</a>
+                      <a href="bussiness.html">Bussiness</a>
+                      <a href="environment.html">Environment</a>
+                      <a href="energy.html">Energy</a>
+                      <a href="culture.html">Culture</a>
+                      <a href="spirit.html">Spirit</a>
+                    </div>
+                  </div> 
+              
+                
+                
+                <i class="vl" style="margin-left: 56vw; margin-top: 2.2%;"></i>
+
+
+
+
+                <!--Search box-->
+              <div class="dropdown" style="margin-right: -5vw;">
+                <button onclick="myFunction()" class="dropbtn" >Search
+                  <i class="material-icons">search</i>
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                  <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                  
+                </div>
+              </div>
+              
+              <script>
+                /* When the user clicks on the button,
+                toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                  document.getElementById("myDropdown").classList.toggle("show");
+                }
+                
+                function filterFunction() {
+                  var input, filter, ul, li, a, i;
+                  input = document.getElementById("myInput");
+                  filter = input.value.toUpperCase();
+                  div = document.getElementById("myDropdown");
+                  a = div.getElementsByTagName("a");
+                  for (i = 0; i < a.length; i++) {
+                    txtValue = a[i].textContent || a[i].innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                      a[i].style.display = "";
+                    } else {
+                      a[i].style.display = "none";
+                    }
+                  }
+                }
+                </script>
+                
+            </div>
+          </nav> 
+      
+          
+          
+      
+      
+      
+      
+      </header>
+
+      <!-- The Big Title here-->
+      <div style="text-align: center; font-size: 75px; margin-top: 5%; margin-bottom: 5%;"><b>Energy</b></div>
+
+      <!-- Category Buttons-->
+      <a href="main.html"><button class="button" style="margin-left: 17%; margin-top: 5px; margin-bottom: 100px;">HOME</button></a>
+      <a href="regional.html"><button class="button" style="margin-left: 1%; margin-top: 5px; margin-bottom: 100px;">REGIONAL NEWS</button></a>
+      <a href="environment.html"><button class="button" style="margin-left: 1%; margin-top: 5px; margin-bottom: 100px;">ENVIRONMENT</button></a>
+      <a href="science.html"><button class="button" style="margin-left: 1%; margin-top: 5px; margin-bottom: 100px;">SCIENCE</button></a>
+      <a href="bussiness.html"><button class="button" style="margin-left: 1%; margin-top: 5px; margin-bottom: 100px;">BUSSINESS</button></a>
+      <a href="culture.html"><button class="button" style="margin-left: 1%; margin-top: 5px; margin-bottom: 100px;">CULTURE</button></a>
+      <a href="spirit.html"><button class="button" style="margin-left: 1%; margin-top: 5px; margin-bottom: 100px;">SPIRITUALITY</button></a>
+
+     
+      
+
+
+      <!-- Left block(Editor's Choice) -->
+      <div class="row"> 
+
+      <div class="col-sm-3" style = "margin-left: 2vw; margin-top: 3vw;">                        
+        
+        <div class="imgcontainer">
+        <a href="../articles/panda.html"><img src="../images/Panda-.jpg" width="550" height="420" style="margin-top: 3vw; object-fit: cover;">
+          <div class="content" style="width: 121.4%;">
+          <h1 class="a">New Panda Cub Lifeline</h1></a>
+        </div>
+        </div>
+
+        <div class="imgcontainer">
+        <a href="../articles/fossil.html"><img src="../images/Fossil.jpg" width="550" height="420" style="margin-top: 3vw; object-fit: cover;">
+          <div class="content" style="width: 121.4%;">
+        <h1 class="a">Six year old finds Fossil in backyard</h1></a>
+      </div>
+    </div>
+
+        <div class="imgcontainer">
+        <a href="../articles/weapons.html"><img src="../images/SerbianArtistWeapons.jpg" width="550" height="420" style="margin-top: 3vw;">
+          <div class="content" style="width: 121.4%;">
+        <h1 class="a">Weapons into Instruments</h1></a>
+      </div>
+    </div>
+
+  </div> 
+
+
+
+
+      <!-- Center block -->
+      <div class="col-sm-3" style = "margin-left: 8vw; margin-top: 3vw;">
+        <div class="imgcontainer">
+        <a href="../articles/firstwomen.html"><img src="../images/MuslimCouncilofBritain.jpg" width="550" height="420" style="margin-top: 3vw; object-fit: cover;">
+          <div class="content" style="width: 121.4%;">
+          <h1 class="a">A First for Women and UK's Muslim Council</h1></a>
+      </div>
+    </div>
+
+        <div class="imgcontainer">
+        <a href="../articles/ferret.html"><img src="../images/Black-FootedFerret.jpg" width="550" height="420" style="margin-top: 3vw; object-fit: cover;">
+          <div class="content" style="width: 121.4%;">
+          <h1 class="a">Cloning Endangered Species Breakthrough</h1></a>
+        </div>
+      </div>
+
+      <div class="imgcontainer">
+        <a href="../articles/ferret.html"><img src="../images/Black-FootedFerret.jpg" width="550" height="420" style="margin-top: 3vw; object-fit: cover;">
+          <div class="content" style="width: 121.4%;">
+          <h1 class="a">Cloning Endangered Species Breakthrough</h1></a>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+      <!-- Right block-->
+      <div class="col-sm-3" style = "margin-left: 8vw; margin-top: 3vw;">
+        <div class="imgcontainer">
+        <a href="../articles/firstwomen.html"><img src="../images/MuslimCouncilofBritain.jpg" width="550" height="420" style="margin-top: 3vw; object-fit: cover;">
+          <div class="content" style="width: 121.4%;">
+          <h1 class="a">A First for Women and UK's Muslim Council</h1></a>
+      </div>
+    </div>
+
+        <div class="imgcontainer">
+        <a href="../articles/ferret.html"><img src="../images/Black-FootedFerret.jpg" width="550" height="420" style="margin-top: 3vw; object-fit: cover;">
+          <div class="content" style="width: 121.4%;">
+          <h1 class="a">Cloning Endangered Species Breakthrough</h1></a>
+        </div>
+      </div>
+
+      <div class="imgcontainer">
+        <a href="../articles/ferret.html"><img src="../images/Black-FootedFerret.jpg" width="550" height="420" style="margin-top: 3vw; object-fit: cover;">
+          <div class="content" style="width: 121.4%;">
+          <h1 class="a">Cloning Endangered Species Breakthrough</h1></a>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+
+
+      
+
+
+
+
+
+      </div> <!-- end of all blocks-->
+
+
+
+      <div> <!-- News Domains   -->
+        <div class="row" style = "background-color: #ffffff; background-size: 100% 100%; margin-top: 7%;">
+    
+       
+      <div class="col-sm-1" style = "margin-left: 15%;">
+        <a href="#"><h2 style="font-size:24px; font-family:Arial, Helvetica, sans-serif; color:#4172dc; text-align:center"><b>Facebook</b></h2></a>
+        </div>
+      
+      <div class="col-sm-1" style = "margin-left: 0.1%;">            
+          <a href="#"><h2 style="font-size:24px; font-family:Arial, Helvetica, sans-serif; color:#4172dc; text-align:center" ><b>Twitter</b></h2></a>
+          </div>
+    
+      <div class="col-sm-1" style = "margin-left: 0.1%;">                        
+        <a href="#"><h2 style="font-size:24px; font-family:Arial, Helvetica, sans-serif; color:#4172dc; text-align:center"><b>Instagram</b></h2></a>
+          </div>
+      
+     <div class="col-sm-1" style = "margin-left: 0.1%;">                        
+        <a href="#"><h2 style="font-size:24px; font-family:Arial, Helvetica, sans-serif; color:#4172dc; text-align:center"><b>Email</b></h2></a>
+          </div>     
+
+    
+
+      </div>
+
+      <hr>
+      <a href="login.html"><h2 style="font-size:24px; font-family:Arial, Helvetica, sans-serif; color:#4172dc; margin-left: 16%; margin-top: 2%"><b>Login</b></h2></a>
+    </div> <!-- end of domain bar-->
+    
+
+
+</body>
