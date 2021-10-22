@@ -3,4 +3,4 @@ This is a static news website designed in HTML, which is from the Capstone Proje
 Thanks for the inspiring ideas from my groupmate Nicholas, these webpages were designed eventually.
 The pages and articles are not dynamic, only can interact with users as they wish.
 
-Click main.html to open the main page!
+Click the "main.html" to open the main page!
